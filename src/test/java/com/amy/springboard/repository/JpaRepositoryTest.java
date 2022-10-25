@@ -19,7 +19,7 @@ import static org.assertj.core.api.Assertions.*;
 @DataJpaTest
 @Import(JpaConfig.class)
 class JpaRepositoryTest {
-    private Logger logger = LoggerFactory.getLogger(JpaRepositoryTest.class);
+    private final Logger logger = LoggerFactory.getLogger(JpaRepositoryTest.class);
     private final PostRepository postRepository;
     private final PostCommentRepository postCommentRepository;
 
