@@ -37,7 +37,8 @@ class PostControllerTest {
         mvc.perform(get("/posts/1"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.TEXT_HTML))
-                .andExpect(model().attributeExists("post"));
+                .andExpect(model().attributeExists("post"))
+                .andExpect(model().attributeExists("postComments"));
     }
     @Test
     @Disabled("구현전")
