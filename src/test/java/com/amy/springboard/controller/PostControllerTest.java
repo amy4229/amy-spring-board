@@ -20,13 +20,12 @@ class PostControllerTest {
         this.mvc = mvc;
     }
 
-    @Disabled("구현전")
     @Test
     @DisplayName("게시글 리스트 페이지 [GET][정상]")
     public void getPosts_list_normal() throws Exception {
         mvc.perform(get("/posts"))
                 .andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.TEXT_HTML))
+                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
                 .andExpect(model().attributeExists("posts"));
     }
 
