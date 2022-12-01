@@ -1,5 +1,6 @@
 package com.amy.springboard.controller;
 
+import com.amy.springboard.domain.Post;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,7 +27,7 @@ public class PostController {
 
     @GetMapping("/{postId}")
     public String posts(@PathVariable long postId, ModelMap map){
-        map.addAttribute("post", null );
+        map.addAttribute("post", Post.of("","",""));
         map.addAttribute("postComments", List.of());
         return "posts/detail";
     }
