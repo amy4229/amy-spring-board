@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ulsanjunggu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ulsanjunggu.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gootneaeum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Gootneaeum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    width:100vw;
+    margin: 0;
+    background: lightgray;
+    font-family: 'Gootneaeum';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+header{
+    padding: 0.2em;
+    font-family: SF_HambakSnow;
+    background: #2a5663;
+    color:rgba(255,255,255,0.8);
+    font-size: 2.0em;
+    -webkit-box-shadow: -1px 7px 6px -6px #292B2C;
+    box-shadow: -1px 7px 6px -6px #292B2C;
+    height: 8vh;
+}
+
+main{
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: #588391;
+    height: 8vh;
+    font-family: sans-serif;
+    color:white;
+}
+
+.wrapper{
+    width:80%;
+    min-width: 500px;
+    margin:10px auto;
+}
+
