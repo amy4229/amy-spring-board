@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> 게시판 </title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script defer src="/js/index.js"></script>
+</head>
+
+<body>
+    <header th:replace="header::header"></header>
+    <main>
+            <section class="search-bar">
+                <div class="wrapper">
+                    <form name="search-form">
+                        <label hidden for="filterType" ></label>
+                        <select id="filterType" name="filterType">
+                            <option>제목</option>
+                            <option>본문</option>
+                            <option>ID</option>
+                            <option>닉네임</option>
+                            <option>해시태그</option>
+                        </select>
+                        <label hidden for="keyword" ></label>
+                        <input id ="keyword" class="keyword" name="keyword" type="search" placeholder="검색어를 입력해주세요" required/>
+
+                        <button class="search-btn" type="submit" >검색</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="posts">
+                <div class="wrapper">
+                    <table class="list">
+                        <thead>
+                            <tr>
+                                <th class="title-col">제목</th>
+                                <th>해시태그</th>
+                                <th>작성자</th>
+                                <th>작성일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="title-col">첫글_긴이름_adjflakdfiejflakdjfalsdjfisoaiufaosidfj첫글_긴이름_adjflakdfiejflakdjfalsdjfisoaiufaosidfj첫글_긴이름_adjflakdfiejflakdjfalsdjfisoaiufaosidfj첫글_긴이름_adjflakdfiejflakdjfalsdjfisoaiufaosidfj첫글_긴이름_adjflakdfiejflakdjfalsdjfisoaiufaosidfj</td>
+                                <td>#java</td>
+                                <td>amy</td>
+                                <td>2022-11-30</td>
+                            </tr>
+                            <tr>
+                                <td class="title-col">두번째글</td>
+                                <td>#python</td>
+                                <td>amy</td>
+                                <td>2022-01-30</td>
+                            </tr>
+                            <tr>
+                                <td class="title-col">세번째글</td>
+                                <td>#javascript</td>
+                                <td>amy</td>
+                                <td>2022-02-28</td>
+                            </tr>
+                            <tr>
+                                <td class="title-col">네번째글</td>
+                                <td>#ruby</td>
+                                <td>amy</td>
+                                <td>2022-03-28</td>
+                            </tr>
+                            <tr>
+                                <td class="title-col">다섯번째글</td>
+                                <td>#kotlin</td>
+                                <td>amy</td>
+                                <td>2022-04-28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="wrapper">
+                    <nav class="pageNav">
+                        <a>prev</a>
+                        <a>1</a>
+                        <a>2</a>
+                        <a>next</a>
+                    </nav>
+                </div>
+            </section>
+    </main>
+    <footer th:replace="footer::footer"></footer>
+</body>
+</html>

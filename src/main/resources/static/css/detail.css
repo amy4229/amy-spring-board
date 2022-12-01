@@ -1,0 +1,51 @@
+main *{
+    font-family: 'Nanum Gothic', sans-serif;
+    color:#115663;
+}
+main .wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.content-area{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+aside{
+    flex-basis: auto;
+    margin-top:4em;
+}
+.post-content{
+    word-break: break-all;
+
+}
+
+#postComment{
+    width:100%;
+}
+
+.commentBtn{
+    float:right;
+    display: inline-block;
+}
+.comments{
+    margin-top:3em;
+}
+
+nav{
+    text-align: center;
+    margin: 2em auto;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    width: 10em;
+}
+
+
+nav a:hover{
+    font-weight: bold;
+}
