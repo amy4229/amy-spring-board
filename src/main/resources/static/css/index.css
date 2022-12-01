@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.search-bar{
+    background-color: #a5b1c1;
+    height:9%;
+    margin-top:0;
+}
+.search-bar div form *{
+    border: none;
+    padding: 2px;
+    margin-right:10px;
+    border-radius: 2px;
+}
+.search-bar .keyword{
+    height:20px;
+    display:inline-block;
+    width: 30%;
+    min-width: 200px;
+}
+.search-btn{
+    background-color: #2a5663;
+    color:rgba(255,255,255,0.8);
+    transition:0.2s;
+    font-family: SF_HambakSnow;
+    width:50px;
+    height:30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.search-btn:hover{
+    background-color: rgba(255,255,255,0.8);
+    color:#2a5663;
+}
+.posts{
+    width:100%;
+    height:91%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.posts .list{
+    width: 100%;
+    height: 90%;
+    min-width: 1000px;
+}
+
+td, th{
+    width:100px;
+    height:25px;
+    padding:5px;
+    display: inline-block;
+    border_bottom:1px solid #efefef;
+    border-collapse: collapse;
+}
+
+.title-col {
+    width:600px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.list thead{
+    background-color: #588391;
+    height: 40px;
+    font-size: 1.1em;
+}
+
+.list tbody tr{
+    background-color: #afbfcf;
+    cursor: pointer;
+    transition:0.2s;
+    font-size: 1.0em;
+    font-weight: 500;
+}
+
+.list tbody tr:hover {
+    background-color: rgba(230,240,250,0.9);
+    color : #2a5663;
+    font-weight: bold;
+}
+
+.pageNav{
+    height:10%;
+    text-align: center;
+    cursor: pointer;
+    margin:0.5em;
+
+
+}
+.pageNav a{
+    margin:0.5em;
+    transition:0.2s;
+    #font-weight: 600;
+}
+
+.pageNav a:hover{
+    font-weight: 1000;
+    font-size: 1.1em;
+}
+
