@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title> 게시판 </title>
@@ -16,14 +16,17 @@
             <section class="search-bar">
                 <div class="wrapper">
                     <form name="search-form">
-                        <select name="filterType">
+                        <label hidden for="filterType" ></label>
+                        <select id="filterType" name="filterType">
                             <option>제목</option>
                             <option>본문</option>
                             <option>ID</option>
                             <option>닉네임</option>
                             <option>해시태그</option>
                         </select>
-                        <input class="keyword" name="keyword" type="search" placeholder="검색어를 입력해주세요" required/>
+                        <label hidden for="keyword" ></label>
+                        <input id ="keyword" class="keyword" name="keyword" type="search" placeholder="검색어를 입력해주세요" required/>
+
                         <button class="search-btn" type="submit" >검색</button>
                     </form>
                 </div>
