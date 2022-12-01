@@ -30,12 +30,12 @@ class PostControllerTest {
     }
 
     @Test
-    @Disabled("구현전")
     @DisplayName("게시글 상세페이지[GET][정상]")
     public void getPost_detail_normal() throws Exception {
         mvc.perform(get("/posts/1"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
+                .andExpect(view().name("posts/detail"))
                 .andExpect(model().attributeExists("post"))
                 .andExpect(model().attributeExists("postComments"));
     }
