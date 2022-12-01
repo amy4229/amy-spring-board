@@ -24,7 +24,7 @@ public class AuthControllerTest {
 
     @Test
     @DisplayName("로그인페이지[정상]")
-    public void noinput_login_page_nomal() throws Exception {
+    public void noinput_login_page_normal() throws Exception {
         mvc.perform(get("/login"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML));
