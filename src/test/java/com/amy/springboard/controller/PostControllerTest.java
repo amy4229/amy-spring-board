@@ -35,7 +35,7 @@ class PostControllerTest {
     public void getPost_detail_normal() throws Exception {
         mvc.perform(get("/posts/1"))
                 .andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.TEXT_HTML))
+                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
                 .andExpect(model().attributeExists("post"))
                 .andExpect(model().attributeExists("postComments"));
     }
@@ -45,7 +45,7 @@ class PostControllerTest {
     public void getPost_search_keyword_normal() throws Exception {
         mvc.perform(get("/posts/search"))
                 .andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.TEXT_HTML));
+                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML));
     }
     @Test
     @Disabled("구현전")
@@ -53,7 +53,7 @@ class PostControllerTest {
     public void getPost_search_tag_normal() throws Exception {
         mvc.perform(get("/posts/search-tag"))
                 .andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.TEXT_HTML));
+                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML));
     }
 
 }
