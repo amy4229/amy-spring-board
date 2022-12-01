@@ -1,5 +1,5 @@
 -- 테스트용 유저데이터
-insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values("amy123","amy1234","amy123","amy123@nomail.com","memo",now(),"admin",now(),"admin");
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values('amy123','amy1234','amy123','amy123@nomail.com','memo',now(),'admin',now(),'admin');
 
 
 -- 111개 post데이터
