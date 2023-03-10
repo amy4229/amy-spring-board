@@ -3,7 +3,7 @@ package com.amy.springboard.domain;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Objects;
 
 @ToString
